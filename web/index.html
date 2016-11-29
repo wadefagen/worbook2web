@@ -1,0 +1,25 @@
+{% extends "templates/publish.html" %}
+{% block projectContent %}
+
+<script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+<script src="http://d3js.org/topojson.v1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.16.0/d3-legend.js"></script>
+<script src="web/vis.js"></script>
+
+
+<h2>Olympic Medals by Country</h2>
+
+<p>
+  In the Olympic games from 2000-2012, a total of 9,529 medals were awarded.
+  The visualization below displays the distribution of those medals by country.
+  Work needs to be done to ensure the data is visualized correctly (eg: Russia
+  did win some medals, though Russia is visualized in the color black).
+</p>
+
+
+<div id="map"></div>
+<div id="legend" style="margin: 0px auto; width: 300px;"></div>
+
+
+
+{% endblock %}
